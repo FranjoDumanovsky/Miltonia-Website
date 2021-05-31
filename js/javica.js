@@ -1,4 +1,3 @@
-console.log("helloWorld");
 document.getElementById("samoborButton").classList.add("activateButton")
 
 
