@@ -876,6 +876,12 @@ body, button, input {
   padding: 18% 5rem;
 }
 
+@media screen and (max-width: 420px) {
+  .contact {
+    margin: 5vh 0 15vh 0;
+  }
+}
+
 .contact__deviderContainer {
   margin-top: 10vh;
   margin-bottom: 10vh;
@@ -1285,8 +1291,7 @@ footer {
   margin-top: 0vh;
   margin-bottom: 15%;
   padding: 13% 6%;
-  background: url("../Slike/colorfull buildings.jpg") no-repeat fixed;
-  background-size: cover;
+  background: url("../Slike/colorfull buildings.jpg") no-repeat center fixed;
   opacity: 0.96;
   -webkit-filter: saturate(1) brightness(1) grayscale(0.3);
           filter: saturate(1) brightness(1) grayscale(0.3);
