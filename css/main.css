@@ -44,7 +44,11 @@ img {
   }
 }
 
-
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0rem 1.5rem;
+  }
+}
 
 .showcase {
   background-color: var(--background-transparent);
