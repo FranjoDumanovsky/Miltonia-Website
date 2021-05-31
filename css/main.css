@@ -852,7 +852,7 @@ a {
   font-size: 1.2rem;
   margin-bottom: 5%;
   font-family: var(--primary-font);
-  line-height: 1.9;
+  line-height: 1.6;
   letter-spacing: 1.5px;
   word-spacing: 1.5;
 }
@@ -1288,14 +1288,19 @@ footer {
 }
 
 .toggleMap__deviderContainer {
+  width: 100%;
   margin-top: 0vh;
   margin-bottom: 15%;
-  padding: 14% 6%;
-  background: url("../Slike/colorfull buildings.jpg") no-repeat center fixed;
+  padding: 10% 6%;
+  background: url("../Slike/colorfull buildings.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*add this*/
   opacity: 0.96;
   -webkit-filter: saturate(1) brightness(1) grayscale(0.3);
           filter: saturate(1) brightness(1) grayscale(0.3);
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 960px) {
@@ -1311,13 +1316,9 @@ footer {
     padding: 30% 6%;
     margin-bottom: 35%;
     margin-top: 7vh;
+    background-position: center;
+    background-size: initial;
   }
-}
-
-.toggleMap__deviderContainer__image {
-  border-radius: 10%;
-  height: 400px;
-  max-width: 100%;
 }
 
 @media screen and (max-width: 960px) {
@@ -1329,11 +1330,6 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .toggleMap__deviderContainer__image {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
 }
 
@@ -1390,13 +1386,13 @@ footer {
 }
 
 .activateButton {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
 }
 
 /* 文字1を上に */
 .effect04:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
 }
 
