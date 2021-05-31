@@ -44,11 +44,7 @@ img {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .container {
-    padding: 5rem 2.5rem;
-  }
-}
+
 
 .showcase {
   background-color: var(--background-transparent);
@@ -178,6 +174,17 @@ img {
   .showcase-Aboutus p,
   .showcase-Products p {
     margin: 5rem 6rem 5rem 6rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .showcase p,
+  .showcase-Contacts p,
+  .showcase-Aboutus p,
+  .showcase-Products p {
+   
+    margin: 3rem 0rem 3rem 0rem;
+    font-size: 1.8rem;
   }
 }
 
