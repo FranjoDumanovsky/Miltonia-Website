@@ -1447,6 +1447,7 @@ footer {
 div > iframe {
   max-width: 600px;
   min-width: 400px;
+  min-height: 400px;
 }
 
 @media screen and (max-width: 1120px) {
