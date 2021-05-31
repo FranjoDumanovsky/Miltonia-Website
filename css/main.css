@@ -1934,8 +1934,8 @@ form {
   background: url("../Slike/Catalogue2.jpg") no-repeat fixed;
   background-size: cover;
   height: 100vh;
-  -webkit-filter: saturate(1) brightness(0.8);
-          filter: saturate(1) brightness(0.8);
+  -webkit-filter: saturate(1) brightness(1);
+          filter: saturate(1) brightness(1);
   content: '';
   position: absolute;
   top: 0;
