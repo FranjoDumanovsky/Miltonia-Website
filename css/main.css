@@ -40,13 +40,13 @@ img {
 
 @media screen and (max-width: 1200px) {
   .container {
-    padding: 0 5rem;
+    padding: 0rem 5rem;
   }
 }
 
 @media screen and (max-width: 700px) {
   .container {
-    padding: 0 2.5rem;
+    padding: 5rem 2.5rem;
   }
 }
 
@@ -81,8 +81,8 @@ img {
 @-webkit-keyframes example {
   from {
     opacity: 0.95;
-    -webkit-filter: grayscale(10%) brightness(100%) hue-rotate(360deg);
-            filter: grayscale(10%) brightness(100%) hue-rotate(360deg);
+    -webkit-filter: grayscale(20%) brightness(50%) hue-rotate(360deg);
+            filter: grayscale(20%) brightness(50%) hue-rotate(360deg);
   }
   to {
     opacity: 1;
@@ -94,8 +94,8 @@ img {
 @keyframes example {
   from {
     opacity: 0.95;
-    -webkit-filter: grayscale(10%) brightness(100%) hue-rotate(360deg);
-            filter: grayscale(10%) brightness(100%) hue-rotate(360deg);
+    -webkit-filter: grayscale(20%) brightness(50%) hue-rotate(360deg);
+            filter: grayscale(20%) brightness(50%) hue-rotate(360deg);
   }
   to {
     opacity: 1;
@@ -137,6 +137,26 @@ img {
   text-shadow: 4px 4px 4px #000000;
 }
 
+@media screen and (max-width: 540px) {
+  .showcase h1,
+  .showcase-Contacts h1,
+  .showcase-Aboutus h1,
+  .showcase-Products h1 {
+    font-size: 3.6rem;
+    margin: 3rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .showcase h1,
+  .showcase-Contacts h1,
+  .showcase-Aboutus h1,
+  .showcase-Products h1 {
+    font-size: 2.8rem;
+    margin: 2rem 0 0 0;
+  }
+}
+
 .showcase p,
 .showcase-Contacts p,
 .showcase-Aboutus p,
@@ -166,8 +186,18 @@ img {
   .showcase-Contacts p,
   .showcase-Aboutus p,
   .showcase-Products p {
-    margin: 5rem 0rem 5rem 0rem;
-    padding: 10px 40px;
+    font-size: 1.2rem;
+    margin: 2.5rem 0rem 2.5rem 0rem;
+    padding: 5px 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .showcase p,
+  .showcase-Contacts p,
+  .showcase-Aboutus p,
+  .showcase-Products p {
+    font-size: 1rem;
   }
 }
 
@@ -232,6 +262,12 @@ h5 {
   text-align: center;
 }
 
+@media screen and (max-width: 540px) {
+  .headerContainer {
+    padding: 5rem 2rem;
+  }
+}
+
 .headerContainer h1 {
   font-size: 3rem;
   font-style: italic;
@@ -249,29 +285,13 @@ h5 {
 @media screen and (max-width: 540px) {
   .headerContainer h1 {
     padding: 2rem 0;
-    font-size: 2rem;
-  }
-  .headerContainer {
-    padding: 5rem 2rem;
-  }
-  .showcase h1 {
-    font-size: 4rem;
-  }
-  .showcase p {
-    font-size: 1.4rem;
-    margin: 40px 0;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 400px) {
   .headerContainer h1 {
-    font-size: 2rem;
-  }
-  .showcase h1 {
-    font-size: 3rem;
-  }
-  .showcase p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1876,5 +1896,11 @@ form {
 @media screen and (max-width: 950px) {
   .showcase-Products::before {
     background: url("../Slike/Catalogue2.jpg") no-repeat center center/cover fixed;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .showcase-Products::before {
+    background: url("../Slike/Catalogue2Mobile.jpg") no-repeat center center/cover fixed;
   }
 }
