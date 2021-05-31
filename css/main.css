@@ -1899,7 +1899,7 @@ form {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .showcase-Products::before {
     background: url("../Slike/Catalogue2Mobile.jpg") no-repeat center center/cover fixed;
   }
