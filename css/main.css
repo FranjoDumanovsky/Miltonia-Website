@@ -4,7 +4,7 @@
   --secondary-font: 'Merriweather', serif;
   --background-primary: #f9f9f7;
   --background-transparent: rgba(166, 175, 171, 0.14);
-  --background-dark-transparent:rgba(37, 37, 37, 0.765);
+  --background-dark-transparent:rgba(93, 32, 8, 0.14);
   --background-dark:rgba(0, 0, 0);
   --background-gray: #f1f1f1;
   --menu-speed: 0.75s;
@@ -51,7 +51,7 @@ img {
 }
 
 .showcase {
-  background-color: var(--background-transparent);
+  background-color: var(--background-dark-transparent);
   color: var(--font-color-dark);
   height: 100vh;
   position: relative;
@@ -80,7 +80,7 @@ img {
 
 @-webkit-keyframes example {
   from {
-    opacity: 0.85;
+    opacity: 0.9;
     -webkit-filter: grayscale(0%) brightness(80%) hue-rotate(360deg);
             filter: grayscale(0%) brightness(80%) hue-rotate(360deg);
   }
@@ -93,7 +93,7 @@ img {
 
 @keyframes example {
   from {
-    opacity: 0.85;
+    opacity: 0.9;
     -webkit-filter: grayscale(0%) brightness(80%) hue-rotate(360deg);
             filter: grayscale(0%) brightness(80%) hue-rotate(360deg);
   }
@@ -208,7 +208,7 @@ img {
   .showcase-Products p {
     font-size: 1.2rem;
     margin: 2.5rem 0rem 2.5rem 0rem;
-    padding: 15px 40px;
+    padding: 1a5px 40px;
   }
 }
 
