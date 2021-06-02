@@ -1913,7 +1913,7 @@ form {
 }
 
 .showcase-Aboutus {
-  background-color: var(--background-dark-transparent);
+  background-color: rgba(135, 135, 135, 0.15);
   color: var(--font-color-dark);
   height: 100vh;
   position: relative;
@@ -1953,8 +1953,8 @@ form {
   background: url("../Slike/Catalogue2.jpg") no-repeat fixed;
   background-size: cover;
   height: 100vh;
-  -webkit-filter: saturate(0.8) brightness(1);
-          filter: saturate(0.8) brightness(1);
+  -webkit-filter: saturate(0.8);
+          filter: saturate(0.8);
   content: '';
   position: absolute;
   top: 0;
