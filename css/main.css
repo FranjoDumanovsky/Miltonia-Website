@@ -70,8 +70,8 @@ img {
           animation-iteration-count: infinite;
   -webkit-animation-name: example;
           animation-name: example;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-timing-function: linear;
@@ -80,27 +80,27 @@ img {
 
 @-webkit-keyframes example {
   from {
-    opacity: 0.95;
-    -webkit-filter: grayscale(20%) brightness(50%) hue-rotate(360deg);
-            filter: grayscale(20%) brightness(50%) hue-rotate(360deg);
+    opacity: 0.85;
+    -webkit-filter: grayscale(0%) brightness(80%) hue-rotate(360deg);
+            filter: grayscale(0%) brightness(80%) hue-rotate(360deg);
   }
   to {
     opacity: 1;
-    -webkit-filter: grayscale(0.8) brightness(80%) hue-rotate(0deg) saturate(2);
-            filter: grayscale(0.8) brightness(80%) hue-rotate(0deg) saturate(2);
+    -webkit-filter: grayscale(0.8) brightness(60%) hue-rotate(0deg) saturate(2);
+            filter: grayscale(0.8) brightness(60%) hue-rotate(0deg) saturate(2);
   }
 }
 
 @keyframes example {
   from {
-    opacity: 0.95;
-    -webkit-filter: grayscale(20%) brightness(50%) hue-rotate(360deg);
-            filter: grayscale(20%) brightness(50%) hue-rotate(360deg);
+    opacity: 0.85;
+    -webkit-filter: grayscale(0%) brightness(80%) hue-rotate(360deg);
+            filter: grayscale(0%) brightness(80%) hue-rotate(360deg);
   }
   to {
     opacity: 1;
-    -webkit-filter: grayscale(0.8) brightness(80%) hue-rotate(0deg) saturate(2);
-            filter: grayscale(0.8) brightness(80%) hue-rotate(0deg) saturate(2);
+    -webkit-filter: grayscale(0.8) brightness(60%) hue-rotate(0deg) saturate(2);
+            filter: grayscale(0.8) brightness(60%) hue-rotate(0deg) saturate(2);
   }
 }
 
@@ -665,13 +665,31 @@ h5 {
 
 .card__button {
   color: #9c2020;
-  top: -60px;
+  top: -90px;
   font-size: 1rem;
   font-style: italic;
   font-weight: 400;
   z-index: -6;
   position: relative;
   font-family: var(--primary-font);
+}
+
+@media screen and (min-width: 1820px) {
+  .card__button {
+    top: -55px;
+  }
+}
+
+@media screen and (max-width: 1780px) {
+  .card__button {
+    top: -70px;
+  }
+}
+
+@media screen and (min-width: 2520px) {
+  .card__button {
+    top: -86px;
+  }
 }
 
 .card:hover .button {
