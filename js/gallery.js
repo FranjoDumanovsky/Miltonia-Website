@@ -16,3 +16,12 @@ $(document).ready(function(){
     $(this).addClass('active').siblings().removeClass('active');
   })
 })
+
+
+
+$(document).click(function(event) {
+  //if you click on anything except the modal itself or the "open modal" link, close the modal
+  if (!$(event.target).closest("li").length) {
+    $("body").find(".modal").removeClass("visible");
+  }
+});

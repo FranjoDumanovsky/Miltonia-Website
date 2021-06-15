@@ -21,17 +21,17 @@ $('.submit').click(function (event) {
 
 
     if (subject.length >= 2) {
-        statusElm.append('<div>Subject is valid</div>')
+        statusElm.append('<div class"formStatus">Subject is valid</div>')
     } else {
         event.preventDefault()
-        statusElm.append('<div>Subject is not valid</div>')
+        statusElm.append('<div class"formStatus">Subject is not valid</div>')
     }
 
     if (message.length >= 10) {
-        statusElm.append('<div>Message is valid</div>')
+        statusElm.append('<div class"formStatus">Message is valid</div>')
     } else {
         event.preventDefault()
-        statusElm.append('<div>Message needs to be atleast 10 chars long</div>')
+        statusElm.append('<div class"formStatus">Message needs to be at least 10 characters long</div>')
     }
 })
 })
