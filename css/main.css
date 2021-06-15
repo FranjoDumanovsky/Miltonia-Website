@@ -3,7 +3,7 @@
   --primary-font: 'Montserrat', sans-serif;
   --secondary-font: 'Merriweather', serif;
   --background-primary: #f9f9f7;
-  --background-transparent: rgba(0, 0, 0, 0.18);
+  --background-transparent: rgb(0, 0, 0);
   --background-dark-transparent:rgba(0, 0, 0, 0.7);
   --background-dark:rgba(0, 0, 0);
   --background-gray: #f1f1f1;
@@ -36,6 +36,7 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 0 15rem;
+  background-color: rgba(44, 43, 43, 0.2502);
 }
 
 @media screen and (max-width: 1200px) {
@@ -54,15 +55,16 @@ img {
 .showcase-Aboutus,
 .showcase-Contacts,
 .showcase-Products {
-  background-color: var(--background-transparent);
   color: var(--font-color-dark);
   height: 100vh;
   position: relative;
+  -webkit-filter: drop-shadow(1px 1px 10px black);
+          filter: drop-shadow(1px 1px 10px black);
 }
 
 .showcase::before {
   content: '';
-  background: url("../Slike/HeroImg.jpg") no-repeat center center/cover fixed;
+  background: url("../Slike/Hero.jpeg") no-repeat center center/cover fixed;
   position: absolute;
   top: 0;
   left: 0;
@@ -73,8 +75,8 @@ img {
           animation-iteration-count: infinite;
   -webkit-animation-name: example;
           animation-name: example;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-timing-function: linear;
@@ -83,27 +85,23 @@ img {
 
 @-webkit-keyframes example {
   from {
-    opacity: 0.9;
-    -webkit-filter: grayscale(0%) hue-rotate(360deg);
-            filter: grayscale(0%) hue-rotate(360deg);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
   to {
-    opacity: 1;
-    -webkit-filter: grayscale(0.5) hue-rotate(0deg);
-            filter: grayscale(0.5) hue-rotate(0deg);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
   }
 }
 
 @keyframes example {
   from {
-    opacity: 0.9;
-    -webkit-filter: grayscale(0%) hue-rotate(360deg);
-            filter: grayscale(0%) hue-rotate(360deg);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
   }
   to {
-    opacity: 1;
-    -webkit-filter: grayscale(0.5) hue-rotate(0deg);
-            filter: grayscale(0.5) hue-rotate(0deg);
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
   }
 }
 
@@ -132,12 +130,12 @@ img {
 .showcase-Contacts h1,
 .showcase-Aboutus h1,
 .showcase-Products h1 {
-  font-size: 4rem;
-  color: #f8f8f8;
+  font-size: 4.7rem;
+  color: white;
   font-style: italic;
-  font-weight: 600;
+  font-family: var(--primary-font);
   margin: 5rem 0 0 0;
-  text-shadow: 4px 4px 4px #000000;
+  text-shadow: 3px 7px 7px #000000;
 }
 
 @media screen and (max-width: 860px) {
@@ -145,8 +143,8 @@ img {
   .showcase-Contacts h1,
   .showcase-Aboutus h1,
   .showcase-Products h1 {
-    font-size: 3.8rem;
-    margin: 3rem 0 0 0;
+    font-size: 4.3rem;
+    margin: 0rem 0 0 0;
   }
 }
 
@@ -155,8 +153,8 @@ img {
   .showcase-Contacts h1,
   .showcase-Aboutus h1,
   .showcase-Products h1 {
-    font-size: 2.7rem;
-    margin: 2rem 0 0 0;
+    font-size: 3.2rem;
+    margin: 2rem 0 4rem 0;
   }
 }
 
@@ -165,8 +163,8 @@ img {
   .showcase-Contacts h1,
   .showcase-Aboutus h1,
   .showcase-Products h1 {
-    font-size: 2rem;
-    margin: 1rem 0 0 0;
+    font-size: 2.5rem;
+    margin: 0rem 0 2rem 0;
   }
 }
 
@@ -180,9 +178,9 @@ img {
   font-style: italic;
   font-weight: 300;
   letter-spacing: 1.8px;
-  padding: 10px;
-  border-radius: 0.3rem;
-  background-color: rgba(224, 224, 224, 0.38);
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 20px;
+  background-color: rgba(208, 208, 208, 0.5);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1902,7 +1900,7 @@ form {
   color: var(--font-color-dark);
   height: 100vh;
   position: relative;
-  background-color: rgba(29, 29, 29, 0.17);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .showcase-Contacts {
@@ -1913,7 +1911,7 @@ form {
 }
 
 .showcase-Aboutus {
-  background-color: rgba(135, 135, 135, 0.15);
+  background-color: rgba(44, 44, 44, 0.25);
   color: var(--font-color-dark);
   height: 100vh;
   position: relative;
@@ -1935,7 +1933,7 @@ form {
 }
 
 .showcase-Aboutus::before {
-  background: url("../Slike/Fandeck4.jpg") no-repeat center center/cover fixed;
+  background: url("../Slike/FandeckClose.jpg") no-repeat center center/cover fixed;
   background-size: cover;
   height: 100vh;
   -webkit-filter: saturate(1.5) brightness(0.8) grayscale(0.2);
@@ -1950,11 +1948,9 @@ form {
 }
 
 .showcase-Products::before {
-  background: url("../Slike/Catalogue2.jpg") no-repeat fixed;
-  background-size: cover;
+  background: url("../Slike/Catalogue.jpg") no-repeat center/cover fixed;
+  opacity: 1;
   height: 100vh;
-  -webkit-filter: saturate(0.8);
-          filter: saturate(0.8);
   content: '';
   position: absolute;
   top: 0;
@@ -1962,16 +1958,113 @@ form {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-@media screen and (max-width: 950px) {
-  .showcase-Products::before {
-    background: url("../Slike/Catalogue2.jpg") no-repeat center center/cover fixed;
-  }
+  -webkit-filter: saturate(1.5) brightness(0.75) grayscale(0.2);
+          filter: saturate(1.5) brightness(0.75) grayscale(0.2);
 }
 
 @media screen and (max-width: 550px) {
   .showcase-Products::before {
-    background: url("../Slike/Catalogue2Mobile.jpg") no-repeat center center/cover fixed;
+    background: url("../Slike/CatalogueMobile.jpg") no-repeat center center/cover fixed;
   }
+}
+
+.goUpBtn {
+  border: none;
+  background-color: red;
+}
+
+.scrollToTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 130px;
+  height: 130px;
+  cursor: pointer;
+  font-size: 0.74rem;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10000;
+  position: fixed;
+  bottom: 250px;
+  right: 0px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .scrollToTop {
+    width: 110px;
+    height: 110px;
+    font-size: 0.725rem;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .scrollToTop {
+    width: 70px;
+    height: 70px;
+    font-size: 0.525rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .scrollToTop {
+    width: 60px;
+    height: 60px;
+    font-size: 0.35rem;
+  }
+}
+
+.scrollToTop:hover {
+  background-color: rgba(175, 67, 57, 0.6);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.scrollToTop span {
+  margin: 0 auto;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.scrollToTop svg {
+  width: 70px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .scrollToTop svg {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .scrollToTop svg {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .scrollToTop svg {
+    width: 40px;
+  }
+}
+
+.scrollToTop.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 20px;
+}
+
+.status {
+  text-transform: initial;
 }

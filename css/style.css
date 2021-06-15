@@ -190,6 +190,7 @@
 /* This is a navbar section for desktop version */
 .logo {
   max-width: 100%;
+  z-index: 10;
   margin: 0.15em 0.85em;
 }
 
