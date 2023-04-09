@@ -1,4 +1,4 @@
-<h1> Miltonia d.o.o. Website</h1>
+<h1> Miltonia d.o.o.</h1>
 
 I made this website as my first project ever back in 2020 while I was working in Miltonia as a salesperson.
 
